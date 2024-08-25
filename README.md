@@ -47,10 +47,15 @@ python nombre_del_archivo.py
 
 - **tabla.find_all('tr', class_='vevent'):** Encuentra todas las filas de la tabla que contienen los episodios.
 
-- **celdas[0].get_text(strip=True):** Extrae el texto de la primera celda, que corresponde al número del episodio, eliminando espacios en blanco.
+- **celdas[0].get_text(strip=True):** Extrae el texto de la celda **"No. en temp"**, que corresponde al número del episodio, eliminando espacios en blanco.
 
-- **celdas[2].get_text(strip=True):** Extrae el texto de la tercera celda, que contiene el título del episodio.
+- **celdas[1].get_text(strip=True):** Extrae el texto de la celda **"Título"**, que contiene el título del episodio.
 
+- **celdas[2].get_text(strip=True):** Extrae el texto de la celda **"Dirigido por"**, que corresponde al nombre del director, guionista o productor que dirige el episodio.
+
+- **celdas[3].get_text(strip=True):** Extrae el texto de la celda **"Escrito por"**, que corresponde al nombre del escritor o guionista  que escribe el episodio.
+
+- **celdas[4].get_text(strip=True):** Extrae el texto de la celda **"Fecha de emisón original"**, que corresponde a la fecha en que fue emitido.
 
 ## Aplicaciones del Web Scraping
 Este tipo de scraping puede aplicarse en muchos modelos de negocio, como:
